@@ -1,0 +1,102 @@
+html, body { height: 100%; }
+body { 
+	margin: 0; 
+	font-family: Roboto, sans-serif; 
+	background-color: #eee; 
+	font-size: 14px;
+}
+
+.home {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.container{
+	width: 100%;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+table.chess{
+	width: 100%;
+	height: 100%;
+	max-width: 640px;
+	background-color: #fff;
+	border-collapse: collapse;
+	table-layout: fixed;
+	cursor: pointer;
+}
+
+table, tr, td {
+	border: none;
+}
+
+tr.row{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+tr:last-child {
+	border-bottom: 1px solid #d3d3d3;
+}
+td.col {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-sizing: border-box;
+	border-top: 1px solid #d3d3d3;
+	border-left: 1px solid #d3d3d3;
+	border-bottom: none;
+    border-right: none;
+    height: 64px;
+    width: 64px;
+}
+td:last-child {
+	border-right: 1px solid #d3d3d3;	
+}
+tr:nth-child(even) td:nth-child(even){
+	background-color: #D89F31;
+}
+
+tr:nth-child(odd) td:nth-child(odd){
+	background-color: #D89F31;
+}
+
+i{
+	font-size: 32px;
+}
+.player1{
+	color: #000000;
+}
+.player2{
+	color: #0441f7;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
+
+
+/*following is the mobile first approach*/
+@media (min-width: 640px){}
+ 
+@media (min-width: 768px){}
+ 
+@media (min-width: 1024px){}
+ 
+@media (min-width: 1200px){}
